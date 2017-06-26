@@ -1,0 +1,23 @@
+
+
+<div class="form-container" id="toolbar">
+    <header [@fallIn]="state">
+      <button (click)="logout()" class="basic-btn">Logout</button>
+    </header>
+    <div id="page" [@moveInLeft]="state">
+      <h2>Hey {{ name.auth.displayName }}!</h2>
+
+
+    </div>
+    <a href="https://github.com/login/oauth/authorize?client_id=002b48413bb8039722a1&scope=user:email&redirect_uri=http://localhost:4200/github">
+        <button type="button" class="btn btn-primary" id="github" >Github</button>
+    </a><br>
+    <a href="https://bitbucket.org/site/oauth2/authorize?client_id=Yy5KeJYpenUDsGBDkn&response_type=token">
+        <button type="button" class="btn btn-success" id="bitbucket">Bitbucket</button>
+    </a><br>
+    <a href="https://gitlab.com/oauth/authorize?client_id=920c164df2b8551b4441ec856acb3c45c1d72649cbe3abc305a3366bc81c5f0b&redirect_uri=http://localhost:4200/gitlab&response_type=code">
+      <button type="button" class="btn btn-info" id="gitlab">Gitlab</button>
+    </a>
+
+
+</div>

@@ -1,0 +1,10 @@
+<div class="form-container" id="toolbar">
+    <header [@fallIn]="state">
+      <button (click)="logout()" class="basic-btn">Back</button>
+    </header>
+    <div id="page" [@moveInLeft]="state">
+      <h2>Here is Gitlab access token.</h2>
+      <p>{{code}}</p>
+
+    </div>
+</div>
